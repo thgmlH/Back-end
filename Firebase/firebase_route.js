@@ -33,6 +33,6 @@ router.post('/acodelist', firebase_rdb_controller.acodelist)
 
 router.post('/detaillist', firebase_rdb_controller.detaillist)
 
-router.post('/deletePadAgencyInfoReq', firebase_rdb_controller.deletepadagency)
+router.post('/deleteAgency', firebase_rdb_controller.deleteagency)
 
 module.exports = router
