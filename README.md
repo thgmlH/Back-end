@@ -35,6 +35,7 @@ My server codes
   <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a> 
   <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/></a>
   <img src="https://img.shields.io/badge/MySQL-FF9A00?style=flat-square&logo=MySQL&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/></a>
 
   코로나 시국에 좀 더 편리하고 안전하게 비대면으로 대형 매장을 이용하기 위한 서비스로 QR로 연결되는 웹 페이지로 물건의 위치 검색을 허용하고 위치를 안내하는 반응현 웹
   - 위치 검색
