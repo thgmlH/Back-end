@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=7BD1D6&height=270&section=header&text=ALLQ%20&fontSize=90&fontColor=363636" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=7BD1D2&height=300&section=header&text=ALLQ%20&fontSize=90&fontColor=363636" />
 
 
 <h3 align="center">✨Welcome to ALLQ✨</h3>
