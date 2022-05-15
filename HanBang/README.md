@@ -8,25 +8,29 @@
 -------------------------------------------
 
 ## Profile
-
-- 이명주(스마트iot) 
-> phone: 010-9634-5012 <br>
-> e-mail: innochallmj@naver.com
+- 이명주(스마트iot)                                       
+> e-mail: innochallmj@naver.com                          
 
 - 이소민(스마트iot)
-> phone: 010-5490-9132 <br>
 > e-mail: somin9132@naver.com
 
-- 홍소희(빅데이터학과)
-> phone: 010-5580-8941 <br>
-> e-mail: ghdthgml3578@naver.com
-
 - 윤희연(빅데이터학과)
-> phone: 010-9261-3422 <br>
-> e-mail: dkzndk05@naver.com<br>
+> e-mail: dkzndk05@naver.com
 
+- 홍소희(빅데이터학과)
+> e-mail: ghdthgml3578@naver.com                       
 ---------------------------------------
 
+## Tech
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=Java&logoColor=white"/></a> 
+  <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/></a> 
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/MySQL-FF9A00?style=flat-square&logo=MySQL&logoColor=white"/></a>
+</p>
+
+---------------------------------------
 ## Execution Plan
 - summary
 >  학기가 시작되기 전, 많은 학생들 또는 한림대학교 근처 직장에 근무하는 사람들이 자취방을 구하기 위한 노력을 한다. 하지만, 직방같은 어플이나 에브리타임, 한림대 다음 카페와 같은 커뮤니티 어플에는 학교 주변의 원룸에 관한 정보가 많이 나와 있지 않다. 그래서 흔히 ‘발품을 팔아’ 방을 구하곤 한다. 하지만 코로나가 잠잠해지지 않는 요즘에는 많은 자취방을 돌아다니며 맘에 드는 방을 구하기가 힘들고, 외부인에게 자신이 거주하는 방을 보여주는 것이 꺼려진다.
