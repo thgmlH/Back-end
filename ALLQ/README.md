@@ -9,22 +9,23 @@
 
 ## Profile
 
-- 이명주(스마트iot) 
-> phone: 010-9634-5012 <br>
-> e-mail: innochallmj@naver.com
+- 이명주(스마트iot)                 - 이소민(스마트iot)
+> phone: 010-9634-5012             > phone: 010-5490-9132
+> e-mail: innochallmj@naver.com    > e-mail: somin9132@naver.com 
 
-- 이소민(스마트iot)
-> phone: 010-5490-9132 <br>
-> e-mail: somin9132@naver.com
+- 홍소희(빅데이터학과)              - 윤희연(빅데이터학과)
+> phone: 010-5580-8941             > phone: 010-9261-3422
+> e-mail: ghdthgml3578@naver.com   > e-mail: dkzndk05@naver.com
 
-- 홍소희(빅데이터학과)
-> phone: 010-5580-8941 <br>
-> e-mail: ghdthgml3578@naver.com
+## Tech
 
-- 윤희연(빅데이터학과)
-> phone: 010-9261-3422 <br>
-> e-mail: dkzndk05@naver.com<br>
-
+  <p align="center">
+    <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat-square&logo=JavaScript&logoColor=white"/></a>
+    <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=Amazon AWS&logoColor=white"/></a>
+    <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/></a>
+    <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white"/></a> 
+    <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=Firebase&logoColor=white"/></a> 
+    </p>
 ---------------------------------------
 
 ## Execution Plan
