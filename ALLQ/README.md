@@ -8,14 +8,17 @@
 -------------------------------------------
 
 ## Profile
+- 이명주(스마트iot)                                       
+> e-mail: innochallmj@naver.com                          
 
-- 이명주(스마트iot)                                      - 이소민(스마트iot)
-> phone: 010-9634-5012                                  > phone: 010-5490-9132
-> e-mail: innochallmj@naver.com                         > e-mail: somin9132@naver.com 
+- 이소민(스마트iot)
+> e-mail: somin9132@naver.com
 
-- 홍소희(빅데이터학과)                                    - 윤희연(빅데이터학과)
-> phone: 010-5580-8941                                  > phone: 010-9261-3422
-> e-mail: ghdthgml3578@naver.com                        > e-mail: dkzndk05@naver.com
+- 윤희연(빅데이터학과)
+> e-mail: dkzndk05@naver.com
+
+- 홍소희(빅데이터학과)
+> e-mail: ghdthgml3578@naver.com                       
 ---------------------------------------
 
 ## Tech
