@@ -6,6 +6,8 @@ const webdriver = require('selenium-webdriver');
 const {By} = require('selenium-webdriver')
 const chrome = require('selenium-webdriver/chrome');
 
+//-------Get data from googlesheet and update in specific web page-------//
+
 var rows = [];
 async function main () {
     const authClient = await authorize();
@@ -14,7 +16,7 @@ async function main () {
         spreadsheetId: SPREADSHEETID,  // TODO: Update placeholder value.
 
         // The A1 notation of the values to retrieve.
-        ranges: '01_interaction!C1:G',
+        ranges: 'sheet_name!C1:G',
         // TODO: Update placeholder value.
 
         majorDimension : 'ROWS',
