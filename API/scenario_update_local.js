@@ -1,8 +1,7 @@
-const {DATA_EMAIL, DATA_PASSWORD, URL, SPREADSHEETID, AUTH} = require('./pingpong_config.js')
+const {DATA_EMAIL, DATA_PASSWORD, URL, SPREADSHEETID, AUTH} = require('./config.js')
 const webdriver = require('selenium-webdriver');
 const {By, Key} = require('selenium-webdriver')
 const chrome = require('selenium-webdriver/chrome');
-const { file } = require('googleapis/build/src/apis/file');
 
 const run = async () => { // 1. chromedriver 경로 설정 
     // chromedriver가 있는 경로를 입력 
@@ -31,10 +30,9 @@ const run = async () => { // 1. chromedriver 경로 설정
                  //Key.ESCAPE
                  if(i == 2){
                     console.log('Next step')
-                    //setTimeout(async ()=>{
+                     
                     const uploadBtn = await driver.findElement(By.xpath("//button[contains(text(), '대화 업로드')]"));
                     await uploadBtn.click();
-                    //}, 2000)
                 }
             }
             setTimeout(async () => {
@@ -43,7 +41,7 @@ const run = async () => { // 1. chromedriver 경로 설정
                     
                     await driver.findElement(By.xpath(`//*[@id="modal-root"]/div/div[2]/div/div[3]/div[3]/button`)).click().then(console.log('File add'))
                     
-                    await driver.findElement(By.xpath("//input[@id='pingpong-scripts']")).sendKeys('C:/Users/hyodol/Downloads/conversation.csv')
+                    await driver.findElement(By.xpath("//input[@id='pingpong-scripts']")).sendKeys('C:/Users/user/Downloads/conversation.csv')
 
                     await driver.actions().sendKeys(Key.ESCAPE).perform().then(()=>{
                         setTimeout(async()=>{await driver.findElement(By.className('bm_bV')).sendKeys('덮어씌우기')}, 2000)
