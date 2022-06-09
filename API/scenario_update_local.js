@@ -3,6 +3,8 @@ const webdriver = require('selenium-webdriver');
 const {By, Key} = require('selenium-webdriver')
 const chrome = require('selenium-webdriver/chrome');
 
+//------Access to specific web page using selenium------//
+
 const run = async () => { // 1. chromedriver 경로 설정 
     // chromedriver가 있는 경로를 입력 
         const service = new chrome.ServiceBuilder('./chromedriver_win32/chromedriver.exe').build();
