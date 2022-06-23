@@ -19,7 +19,7 @@ exports.handler = function(event, context, callback){
         async.waterfall([
             function(callback){
                 const params = {
-                          Bucket: "scc-voice-file-storage",
+                          Bucket: "",
                           Key: 'semantic.csv'
                         }
                         
