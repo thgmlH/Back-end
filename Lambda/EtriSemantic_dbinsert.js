@@ -213,7 +213,7 @@ exports.handler = function(event, context, callback){
                             
                             else{
                                 var options = {
-                                    url: 'https://r1cz0ym22d.execute-api.ap-northeast-2.amazonaws.com/hd_semantic/semanticinsert',
+                                    url: 'https://',  //다른 lambda함수 api gateway 이용 호출 => db에 insert(다른 lambda 함수에서 처리)
                                     method: 'POST',
                                     headers: {
                                         'Content-Type': 'application/json'
