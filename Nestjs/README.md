@@ -24,6 +24,6 @@
 
 ## Description
 
-Practicing using Nestjs framework and studying typescript as well. 
+---Practicing using Nestjs framework and studying typescript as well---
 
 (Login, Email process executed)
