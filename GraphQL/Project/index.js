@@ -8,6 +8,13 @@ const server = new ApolloServer({
     resolvers,
 });
 
-server.listen().then(({url})=>{
+/*server.listen().then(({url})=>{
     console.log(`Listening at ${url}`)
-})
+})*/
+
+const result = await server.executeOperation({
+    query: 'query Testquery ($title: String){book (title : $title) {author}}',
+    variables: { title : "Before You" }
+});
+
+console.log(result)
