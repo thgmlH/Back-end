@@ -80,8 +80,7 @@ module.exports = {
  */
  main: async function(auth){
   const script = google.script({version: 'v1', auth});
-  const scriptid = "AKfycbwbilAUUJAa9wT75gBGFrreyYIkqVVZVP7_f6XQOFJObb70aY2o1ctVoqg9RLKgBGVk7A"
-
+  const scriptid = process.env.SCRIPT_ID
   //google.options({auth: authClient});
 
   const res = await script.scripts.run({
