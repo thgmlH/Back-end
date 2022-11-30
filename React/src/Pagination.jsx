@@ -1,16 +1,22 @@
 import styled from "styled-components";
-import { useMemo } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 function Pagination({ total, pageSize, current, setCurrentPage }) {
-  const numPages = useMemo(() => Math.ceil(total / pageSize));
+  const numPages = useMemo(() => Math.ceil(total.length / pageSize));
+  let [ alert, alertSet ] = useState(false);
   console.log('total', total, 'pageSize', pageSize, 'current', current)
+
+  useEffect(() => {
+    setTimeout(()=>{ alertSet(true) }, 500);
+  }, [])
+
   return (
     <>
       <Nav>
         <Button onClick={() => setCurrentPage(current - 1)} disabled={current === 1}>
           &lt;
         </Button>
-        {Array(numPages)
+        {alert === true ? Array(numPages)
           .fill()
           .map((_, i) => (
             <Button
@@ -20,7 +26,7 @@ function Pagination({ total, pageSize, current, setCurrentPage }) {
             >
               {i + 1}
             </Button>
-          ))}
+          )) : null}
         <Button onClick={() => setCurrentPage(current + 1)} disabled={current === numPages}>
           &gt;
         </Button>
