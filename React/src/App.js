@@ -16,6 +16,7 @@ const App = ({ youtube }) => {
   const [pageSize, setPageSize] = useState(8);
   const [currentPage, setCurrentPage] = useState(1);
   const [videos, setVideos] = useState([]);
+  const [style, setStyle] = useState({display: 'block'})
   const offset = (currentPage - 1) * pageSize;
   
   const sendRequest = async() => {
@@ -45,7 +46,6 @@ const App = ({ youtube }) => {
   }, []);  //반복 안하기 / []없으면 반복
 
   const handleSearch = (nowdata) => {
-    //가져온 제목 배열에서 like로 찾아...
     const keyword = inputRef.current.value;
 
     let rtn = [];
@@ -61,41 +61,37 @@ const App = ({ youtube }) => {
   };
 
   if (loading) {
-
     return (
+    <>
       <Wrapper>
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
-        <Loading />
+        <Button>
+            사회참여
+        </Button>
+        <Button>
+            생활교육
+        </Button>
+        <Button>
+            안전지원
+        </Button>
+        <Button>
+            일상생활 지원
+        </Button>
+        <Div>
+        <Input type="text"/>
+        <Button>검색</Button> 
+        </Div>  
       </Wrapper>
+      <Loading />
+      <Loading />
+      <Loading />
+      <Loading />
+      <Loading />
+      <Loading />
+      <Loading />
+      <Loading />
+      </>
     );
-  }
-
-  //               <Navbar onSearch={handleSearch} />     
-
+  }    
   else{
     return (  
       <>
@@ -112,14 +108,16 @@ const App = ({ youtube }) => {
           <Button onClick={() => {onSet(3)}}>
               일상생활 지원
           </Button>
-          <input ref={inputRef} type="text"/>
+          <Div>
+          <Input ref={inputRef} onFocus={() => setStyle({display: 'none'})} onBlur={() => setStyle({display: 'block'})}type="text"/>
           <Button onClick={() => {handleSearch(videos)}}>검색</Button> 
+          </Div>
         </Wrapper>
         <VideoList data={isFetching ? [data[0], offset, pageSize] : [videos, offset, pageSize]}/>
 
-        <footer>
+        <footer style={style}>
         <Pagination
-          total={isFetching ? (data[0].length) : videos.length}
+          total={isFetching ? data[0] : videos}
           pageSize={pageSize}
           current={currentPage}
           setCurrentPage={setCurrentPage}
@@ -149,9 +147,27 @@ const Button = styled.button`
   font-size: 1rem;
   height: 3rem;
 
-  .clicked {
-    color: gold;
-  }
+  &:focus {
+    background-color: grey;
 `;
+
+const Div = styled.div`
+  position: fixed;
+  top: 0;
+  right : 0;
+`
+
+const Input = styled.input`
+  border-left-width:0;
+　border-right-width:0;
+　border-top-width:0;
+　border-bottom-width:1;  
+  margin: 0;
+  background: white;
+  color: black;
+  height: 2.5rem;
+  font-size: 1rem;
+  outline: none;
+`
 
 export default App;

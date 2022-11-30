@@ -16,10 +16,11 @@ const Loading = () => {
   };
   
   export default Loading;
-  const VideoItem = styled.div`
+  
+const VideoItem = styled.div`
   width: 300px;
   display: inline-block;
-  padding: 8px;
+  padding: 15px;
   text-align: left;
   cursor: pointer;
 `;

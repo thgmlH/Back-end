@@ -28,16 +28,24 @@ const Video = ({ index }) => {
   return (
     <VideoItem>
       {click ? (
-        <Modal backdrop={false} isOpen={modalIsOpen} ariaHideApp={false} > 
+        <Modal style={{
+          overlay: {
+            backgroundColor: 'rgba(0, 0, 0, 0.9)'
+          },
+          content: {
+            color: 'white'
+          }
+        }} backdrop={false} isOpen={modalIsOpen} ariaHideApp={false} > 
             <ReactPlayer 
                 url={"http://www.youtube.com/embed/" + index.id}
                 width="95%"
-                height="95vh"
+                height="90%"
                 playing={true}
+                controls={true}
                 style={{
                     position: 'absolute',
-                    top: 35,
-                    left: 30
+                    top: 40,
+                    left: 25
                 }}
             />
             <Close onClick={() => {setModalIsOpen(false)}}>X</Close>
@@ -86,6 +94,8 @@ const Title = styled.div`
 
 const Close = styled.button `
     position: absolute;
-    right: 10px;
-    top: 10px;
+    right: 0;
+    top: 0;
+    width : 40px;
+    height : 40px;
   }`
