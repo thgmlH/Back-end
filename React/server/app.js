@@ -67,18 +67,18 @@ async function compare(data){
     if(localStorage.getItem('text') == null){   //first time
         console.log('1')
         //console.log(store(true).then(confirm))
-        store(true, data).then(confirm).then(call).catch(console.error)
+        return store(true, data).then(confirm)
     }
     else if(localStorage.getItem('text') != null && localStorage.getItem('text') != text){  //if it's not same
         console.log('2')
         //console.log(store(false).then(confirm))
-        store(false, data).then(confirm).then(call).catch(console.error)
+        return store(false, data).then(confirm)
     }
     else if(localStorage.getItem('text') == text){  //if it's not changed
         console.log('3')
         
         const rtn = confirm()
-        call(rtn)
+        return rtn
     }
 }
 
@@ -98,14 +98,18 @@ JSON.parse(myStorage.getItem('object')); // {a : 'b'}
 //유튜브 썸네일 jpg주소 : 유튜브 주소 값 뒤 id를 https://img.youtube.com/vi/{id}/0.jpg
 //그럼 구글 sheet에 유튜브 주소, 카테고리(분류)만 있으면 될 듯
 
-function call(data){
-    app.use(express.static(path.join(__dirname, "build")));
-    app.get('/api', function (req, res) {
-        //res.sendFile(path.join(__dirname, '/hello-react/src/index.js'));
-        //res.send({data})
-        res.send(data)
-    });
 
-    app.listen(8000, function() {console.log("Server listening on Port 8000")});
-}
+app.get('/api', async (req, res) => {
+    try {
+        let result = await authorize().then(main).then((data)=>{
+            return compare(data)
+        })
+        res.send(result)
+    }catch(e){
+        res.send("Failed")
+    }
+});
+
+app.listen(8000, function() {console.log("Server listening on Port 8000")});
+
 
