@@ -43,9 +43,9 @@ My server codes
   - 위치 아이콘으로 표시 
 
 # React-Node Web Page
-  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS3&logoColor=white"/></a>
   <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/></a>
-  <img src="https://img.shields.io/badge/React-#61DAFB?style=flat-square&logo=React&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/Rust-000000?style=flat-square&logo=Rust&logoColor=white"/>
   
   React-Node서버 구성의 카테고리별 영상 표시 웹페이지
   - 영상 검색
