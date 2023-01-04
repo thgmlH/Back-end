@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.span{
+  position: fixed;
+  top: 70px;
+  right: 0px;
+  display: flex;
+  margin: 4px 0 0;
+  padding: 0;
+  width: 100%;
+  height: 625px;
+  border: 1px solid #0ae;
+  -webkit-border-radius: 6px 6px 6px 6px; 
+  border-radius: 6px 6px 6px 6px;
+  font-size: 14px;
+  }
+
+.tabmenu{
+  position: fixed;
+  font-size: 0;
+  left : 5px;
+  top: 5px;
+  }
+
+  .tabmenu input[type="checkbox"]{
+    display: none;
+  }
+  .tabmenu input[type="checkbox"] + em{
+    position: relative;
+    display: inline-block;
+    margin: 0 4px 0 0;
+    padding: 4px 0 0;
+    min-width: 210px;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    background: #ddd;
+    color: #000;
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    line-height: 65px;
+    cursor: pointer;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+  }
+  .tabmenu input[type="checkbox"]:checked + em{
+    background: #0ae;
+    color: #fff;
+  }
+  .tabmenu input[type="checkbox"]:checked + em::after {
+    position: absolute;
+    left: 50%;
+    display: block;
+    margin-left: -9px;
+    border: 9px solid transparent;
+    border-top: 9px solid #0ae;
+    content: "";
+  }
+
+.clicksearch{
+  width: 250px;
+  position: fixed;
+  top: 20px;
+  right : 0;
+}
+  .clicksearch div{
+    display: flex; 
+    align-items: center; 
+    margin-left: 8px;
+  }
+
+  .clicksearch div div{
+    margin-right: 4px;
+  }
+
+  .clicksearch div div svg{
+    width: 40px; 
+    height: 40px; 
+    display: block; 
+    fill: rgba(55, 53, 47, 0.4); 
+    flex-shrink: 0; 
+    backface-visibility: hidden;
+  }
+
+.inputsearch{
+  display: flex; 
+  align-items: center; 
+  border: none; 
+  padding: 0px 4px 0px 0px; 
+  width: 100%; 
+  background: transparent; 
+  font-size: 25px; 
+  line-height: 2; 
+  color: rgb(55, 53, 47); 
+  font-weight: 500; 
+  margin-bottom: 1px;
+}
+  
+  .inputsearch input[type="text"]{
+    font-size: inherit; 
+    line-height: inherit; 
+    border: none; 
+    background: none; 
+    width: 100%; 
+    display: block; 
+    resize: none; 
+    padding: 0px;
+  }
