@@ -41,3 +41,12 @@ My server codes
   코로나 시국에 좀 더 편리하고 안전하게 비대면으로 대형 매장을 이용하기 위한 서비스로 QR로 연결되는 웹 페이지로 물건의 위치 검색을 허용하고 위치를 안내하는 반응현 웹
   - 위치 검색
   - 위치 아이콘으로 표시 
+
+# React-Node Web Page
+  <img src="https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=CSS&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=Node.js&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/React-#61DAFB?style=flat-square&logo=React&logoColor=white"/></a>
+  
+  React-Node서버 구성의 카테고리별 영상 표시 웹페이지
+  - 영상 검색
+  - 카테고리별 영상 
